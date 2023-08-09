@@ -20,9 +20,9 @@ class PasswordStrengthMeterTest {
     }
 
     @Test
-    void meetsOtherCriteriaThenNormal() {
+    void meetsOtherCriteriaExceptForLengthThenNormal() {
         assertStrength("ab12!@A", PasswordStrength.NORMAL);
-        assertStrength("ab12!c", PasswordStrength.NORMAL);
+        assertStrength("Ab12!c", PasswordStrength.NORMAL);
     }
 
     @Test
