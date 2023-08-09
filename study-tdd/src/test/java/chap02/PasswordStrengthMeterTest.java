@@ -40,4 +40,9 @@ class PasswordStrengthMeterTest {
         assertStrength("ab12!@df", PasswordStrength.NORMAL);
     }
 
+    @Test
+    void meetsOnlyLengthCriteriaThenWeak() {
+        assertStrength("abcdefghi", PasswordStrength.WEAK);
+    }
+
 }
