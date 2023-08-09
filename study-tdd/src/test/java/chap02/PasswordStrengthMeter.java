@@ -10,16 +10,29 @@ public class PasswordStrengthMeter {
             return PasswordStrength.NORMAL;
         }
 
-        boolean containsNum = meetsContainingNumberCriteria(s);
+        boolean containsNumber = meetsContainingNumberCriteria(s);
+        if (!containsNumber) {
+            return PasswordStrength.NORMAL;
+        }
 
-        if (!containsNum) {
+        boolean containsUppercase = meetsContainingUppercaseCriteria(s);
+        if (!containsUppercase) {
             return PasswordStrength.NORMAL;
         }
 
         return PasswordStrength.STRONG;
     }
 
-    private static boolean meetsContainingNumberCriteria(String s) {
+    private boolean meetsContainingUppercaseCriteria(String s) {
+        for (char ch : s.toCharArray()) {
+            if (Character.isUpperCase(ch)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean meetsContainingNumberCriteria(String s) {
         for (char ch : s.toCharArray()) {
             if (ch >= '0' && ch <= '9') {
                 return true;
