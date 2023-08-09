@@ -6,20 +6,22 @@ public class PasswordStrengthMeter {
             return PasswordStrength.INVALID;
         }
 
-        int metCounts = 0;
-
-        boolean lengthEnough = s.length() >= 8;
-        boolean containsNumber = meetsContainingNumberCriteria(s);
-        boolean containsUppercase = meetsContainingUppercaseCriteria(s);
-
-        if (lengthEnough) metCounts++;
-        if (containsNumber) metCounts++;
-        if (containsUppercase) metCounts++;
+        int metCounts = getMetCriteriaCounts(s);
 
         if (metCounts <= 1) return PasswordStrength.WEAK;
         if (metCounts == 2) return PasswordStrength.NORMAL;
 
         return PasswordStrength.STRONG;
+    }
+
+    private int getMetCriteriaCounts(String s) {
+        int metCounts = 0;
+
+        if (s.length() >= 8) metCounts++;
+        if (meetsContainingNumberCriteria(s)) metCounts++;
+        if (meetsContainingUppercaseCriteria(s)) metCounts++;
+
+        return metCounts;
     }
 
     private boolean meetsContainingUppercaseCriteria(String s) {
