@@ -30,4 +30,9 @@ class PasswordStrengthMeterTest {
         assertStrength("ab!@ABqwer", PasswordStrength.NORMAL);
     }
 
+    @Test
+    void nullInputThenInvalid() {
+        assertStrength(null, PasswordStrength.INVALID);
+    }
+
 }
