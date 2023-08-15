@@ -197,3 +197,123 @@
   ```
 
 - 수정 후에도 항상 테스트가 통과하는지 확인해야한다.
+
+#### 네 번째 테스트: 값이 없는 경우
+
+* 예외상황에 대한 테스트
+* null이거나 빈 문자열인 경우 
+    * ~~`throws IllegalArgumentException`~~
+    * `return PasswordStrength.INVALID`
+* `PasswordStrength.INVALID` 추가
+	```java
+	public enum PasswordStrength {
+		INVALID, NORMAL, STRONG
+	}
+	``````
+https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L29-L33
+
+<br>
+
+#### 다섯 번째 테스트: 대문자를 포함하지 않고 나머지 조건을 충족하는 경우
+→ `PasswordStrength.NORMAL`
+
+https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L35-L38
+<br>
+
+#### 여섯 번째 테스트: 길이가 8글자 이상인 조건만 충족하는 경우
+→ `PasswordStrength.WEAK`
+
+* `PasswordStrength.WEAK` 추가
+  ```java
+  public enum PasswordStrength {
+      INVALID, WEAK, NORMAL, STRONG
+  }
+  ```
+
+  https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L40-L43
+
+https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/main/java/chap02/PasswordStrengthMeter.java#L6-L10
+
+* if문 위치를 변경하여 로직을 분리함
+    * 개별 규칙을 검사하는 로직
+    * 규칙을 검사한 결과에 따라 암호 강도를 계산하는 로직
+* 변경 후에도 테스트가 잘 통과하는지 확인
+
+<br>
+
+#### 일곱 번째 테스트: 숫자 포함 조건만 충족하는 경우
+https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L45-L48
+
+> 코드를 정리하고 싶지만, 아직 아이디어가 떠오르지 않는다.  
+> 일단 다음 테스트로 넘어가자.
+
+<br>
+
+#### 여덟 번째 테스트: 대문자 포함 조건만 충족하는 경우
+→ `PasswordStrength.WEAK`
+
+https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L50-L53
+
+<br>
+#### 코드 정리: meter() 메서드 리팩토링
+
+* 만족한 규칙의 개수를 세는 로직을 메서드로 분리하여, 전반적인 로직을 한 눈에 파악하기 쉬워짐
+
+* metCounts 값을 조건에 충족될 경우 증가 시켜 충족된 조건에 따라 암호강도를 확인할 수 있다.
+https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/main/java/chap02/PasswordStrengthMeter.java#L3-L11
+
+<br>
+
+#### 아홉 번째 테스트: 아무 조건도 충족하지 않는 경우
+→ `PasswordStrength.WEAK`
+
+1. 새로운 테스트를 추가하거나 기존 코드를 수정하면 테스트 실행
+2. 실패하면 테스트를 통과시키기 위해 코드 추가
+
+https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L55-L58
+<br>
+
+#### 코드 정리: 코드 가독성 개선
+
+https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/main/java/chap02/PasswordStrengthMeter.java#L30-L37
+
+* 길이, 숫자 포함 여부, 대문자 포함 여부 규칙을 확인할 수 있는 getMetCriteriaCounts() 메서드를 만들어 가독성개선.
+
+#### 테스트에서 메인으로 코드 이동
+
+* 구현 완료 후 배포 대상인 메인 소스 폴더로 이동
+
+<br>
+
+## Chap.02 정리
+암호검사기 기능을 TDD로 구현하는 예제를 보면서 TDD 개발 흐름을 알 수 있었다.
+
+### TDD 흐름
+
+1. 기능을 검증하는 테스트를 먼저 작성
+2. 테스트를 통과하지 못하면 테스트를 *통과할 만큼만* 코드를 작성
+3. 테스트를 통과한 후엔 필요 시 리팩토링
+4. 리팩토링 후 다시 테스트를 실행하여 확인
+5. 이 과정을 반복하며 점진적으로 기능을 완성
+   
+> **Red-Green-Refactor**  
+> 실패 - 통과 - 리팩토링
+
+![image](https://github.com/2jigoo/BookStudy-StartTdd/assets/90444513/64aaa40b-2171-4f14-9600-daf3628bd608)
+
+**이 과정을 반복하면서 점진적으로 기능을 완성해 나가는 것.**
+
+* *테스트가 개발을 주도하게 된다*
+    * 테스트 코드를 만들면 다음 개발 범위가 정해진다.
+  	* 검증하는 범위가 넓어질수록 구현도 점점 완성된다.
+* *지속적인 코드 정리*
+    * 구현 완료 후 리팩토링 진행
+    * 리팩토링할 대상이 보이면 리팩토링 진행,  
+  	별다른 방법이 생각나지 않을 땐 계속해서 테스트 코드 작성
+    * 테스트 코드도 리팩토링의 대상
+    * 테스트 코드가 있으면 해당 기능의 정상 동작을 검증할 수 있기 때문에 보다 과감한 리팩토링 가능
+    * 지속적인 코드 정리 → 유지보수 비용 감소
+* *빠른 피드백*
+	* 코드 수정에 대해 빠르게 검증할 수 있기 때문에, 잘못된 코드가 배포되는 것을 방지할 수 있다.
+
+
