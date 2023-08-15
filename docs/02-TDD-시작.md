@@ -242,7 +242,7 @@ https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b9
   }
   ```
 
-  https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L40-L43
+https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L40-L43
 
 https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/main/java/chap02/PasswordStrengthMeter.java#L6-L10
 
