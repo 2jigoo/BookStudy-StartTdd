@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#11 chap03:예외 상황 테스트 추가">
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#11 chap03:코드정리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" afterDir="false" />
@@ -78,7 +78,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_이만원_이상_납부">
+  <component name="RunManager" selected="JUnit.ExpriyDateCalculatorTest.십만원을_납부하면_1년_제공">
     <configuration name="ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -102,6 +102,22 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
       <method v="2" />
+    </configuration>
+    <configuration name="ExpriyDateCalculatorTest.십만원을_납부하면_1년_제공" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chap03" />
+      <option name="MAIN_CLASS_NAME" value="chap03.ExpriyDateCalculatorTest" />
+      <option name="METHOD_NAME" value="십만원을_납부하면_1년_제공" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ExpriyDateCalculatorTest.이만원_이상_납부하면_비례해서_만료일_계산" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study.test" />
@@ -153,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExpriyDateCalculatorTest.십만원을_납부하면_1년_제공" />
         <item itemvalue="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_이만원_이상_납부" />
         <item itemvalue="JUnit.ExpriyDateCalculatorTest.이만원_이상_납부하면_비례해서_만료일_계산" />
         <item itemvalue="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부" />
         <item itemvalue="Gradle.ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨" />
-        <item itemvalue="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692199777419</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="#11 chap03:코드정리">
+      <option name="closed" value="true" />
+      <created>1692201454278</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692201454278</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +249,7 @@
     <MESSAGE value="#11 chap03: 예외 상황 테스트 진행 계속" />
     <MESSAGE value="#11 chap03:코드정리:상수를 변수로" />
     <MESSAGE value="#11 chap03:예외 상황 테스트 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 chap03:예외 상황 테스트 추가" />
+    <MESSAGE value="#11 chap03:코드정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 chap03:코드정리" />
   </component>
 </project>
