@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#11 chap03: 예외 상황 테스트 진행 계속" />
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#11 chap03:코드정리:상수를 변수로">
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +76,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부">
+  <component name="RunManager" selected="JUnit.ExpriyDateCalculatorTest.이만원_이상_납부하면_비례해서_만료일_계산">
     <configuration name="ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -99,6 +101,22 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="ExpriyDateCalculatorTest.이만원_이상_납부하면_비례해서_만료일_계산" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chap03" />
+      <option name="MAIN_CLASS_NAME" value="chap03.ExpriyDateCalculatorTest" />
+      <option name="METHOD_NAME" value="이만원_이상_납부하면_비례해서_만료일_계산" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study.test" />
       <extension name="coverage">
@@ -117,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExpriyDateCalculatorTest.이만원_이상_납부하면_비례해서_만료일_계산" />
         <item itemvalue="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부" />
         <item itemvalue="Gradle.ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨" />
         <item itemvalue="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부" />
@@ -141,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692199160213</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="#11 chap03:코드정리:상수를 변수로">
+      <option name="closed" value="true" />
+      <created>1692199366414</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692199366414</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +197,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#11 chap03: 다음테스트를 추가하기 전에 리팩토링" />
     <MESSAGE value="#11 chap03: 예외 상황 테스트 진행 계속" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 chap03: 예외 상황 테스트 진행 계속" />
+    <MESSAGE value="#11 chap03:코드정리:상수를 변수로" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 chap03:코드정리:상수를 변수로" />
   </component>
 </project>

@@ -63,6 +63,23 @@ class ExpriyDateCalculatorTest {
         assertExpriyDate(payData3,LocalDate.of(2019,7,31));
     }
 
+    @Test
+    void 이만원_이상_납부하면_비례해서_만료일_계산(){
+        assertExpriyDate(
+                PayData.builder()
+                        .billingDate(LocalDate.of(2019,3,1))
+                        .payAmount(20_000)
+                        .build(),
+                LocalDate.of(2019,5,1));
+        //3만원
+        assertExpriyDate(
+                PayData.builder()
+                        .billingDate(LocalDate.of(2019,3,1))
+                        .payAmount(30_000)
+                        .build(),
+                LocalDate.of(2019,5,1));
+    }
+
     private void assertExpriyDate(PayData payData , LocalDate expectedExpriyDate){
         ExpriyDateCalculator cal = new ExpriyDateCalculator();
         LocalDate realExpriyDate = cal.calculateExpriyDate(payData);
