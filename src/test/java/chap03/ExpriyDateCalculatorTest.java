@@ -38,6 +38,31 @@ class ExpriyDateCalculatorTest {
                 .build(), LocalDate.of(2019,2,28));
     }
 
+    @Test
+    void 첫_납부일과_만료일_일자가_다를때_만원_납부(){
+        PayData payData = PayData.builder()
+                .firstBillingDate(LocalDate.of(2019,1,31))
+                .billingDate(LocalDate.of(2019,2,28))
+                .payAmount(10_000)
+                .build();
+        assertExpriyDate(payData,LocalDate.of(2019,3,31));
+        //첫 납부일과 만료일 일자가 같지 않은 사례 추가
+        PayData payData2 = PayData.builder()
+                .firstBillingDate(LocalDate.of(2019,1,30))
+                .billingDate(LocalDate.of(2019,2,28))
+                .payAmount(10_000)
+                .build();
+        assertExpriyDate(payData2,LocalDate.of(2019,3,30));
+
+        //첫 납부일과 만료일 일자가 같지 않은 또 다른 사례 추가
+        PayData payData3 = PayData.builder()
+                .firstBillingDate(LocalDate.of(2019,5,31))
+                .billingDate(LocalDate.of(2019,6,30))
+                .payAmount(10_000)
+                .build();
+        assertExpriyDate(payData3,LocalDate.of(2019,7,31));
+    }
+
     private void assertExpriyDate(PayData payData , LocalDate expectedExpriyDate){
         ExpriyDateCalculator cal = new ExpriyDateCalculator();
         LocalDate realExpriyDate = cal.calculateExpriyDate(payData);
