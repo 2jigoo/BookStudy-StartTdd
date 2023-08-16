@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdaa46e5-b1e3-4b23-84e5-40fb93c33b44" name="변경" comment="feat: chap03 첫번째 테스트">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap03/ExpriyDateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
