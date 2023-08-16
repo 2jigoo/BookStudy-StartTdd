@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/PayData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/PayData.java" afterDir="false" />
-    </list>
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#11 chap03: 예외 상황 테스트 진행 계속" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,9 +31,14 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="JongHa11 &lt;ljh7859@clipsoft.co.kr&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="jongha2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -128,6 +119,8 @@
       <list>
         <item itemvalue="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부" />
         <item itemvalue="Gradle.ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨" />
+        <item itemvalue="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부" />
+        <item itemvalue="Gradle.ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +133,15 @@
       <option name="presentableId" value="Default" />
       <updated>1692195995980</updated>
     </task>
+    <task id="LOCAL-00001" summary="#11 chap03: 예외 상황 테스트 진행 계속">
+      <option name="closed" value="true" />
+      <created>1692199160213</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692199160213</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,7 +155,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/jongha" />
+                        <option value="jongha" />
                       </list>
                     </value>
                   </entry>
@@ -164,5 +166,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="#11 chap03: 다음테스트를 추가하기 전에 리팩토링" />
+    <MESSAGE value="#11 chap03: 예외 상황 테스트 진행 계속" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 chap03: 예외 상황 테스트 진행 계속" />
   </component>
 </project>
