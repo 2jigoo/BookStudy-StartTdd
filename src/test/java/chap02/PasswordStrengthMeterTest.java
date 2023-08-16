@@ -1,6 +1,7 @@
 package chap02;
 
 import org.junit.jupiter.api.DisplayName;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,16 +12,19 @@ class PasswordStrengthMeterTest {
         PasswordStrength result = passwordStrengthMeter.meter(password);
         assertEquals(expStr,result);
     }
+
     @Test //모든 규칙을 충족하는 경우
     void meetsAllCriteria_Then_Strong(){
         assertStrength("ab12!@AB",PasswordStrength.STRONG);
         assertStrength("abc!Add",PasswordStrength.STRONG);
     }
+
     @Test //길이만 8글자 미만이고 나머지 조건은 충족하는 경우
     void meetsOtherCriteria_except_for_Length_Then_Normal(){
         assertStrength("ab12!@A",PasswordStrength.STRONG);
         assertStrength("Ab12!c",PasswordStrength.STRONG);
     }
+
     @Test //숫자를 포함하지 않고 나머지 조건은 충족하는 경우
     void meetsOtherCriteria_except_for_number_Then_Normal(){
         assertStrength("ab!@ABqwer",PasswordStrength.STRONG);

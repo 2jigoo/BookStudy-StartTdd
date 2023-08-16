@@ -1,5 +1,3 @@
 package chap02;
 
-public enum PasswordStrength {
-    NORMAL, INVALID, WEAK, STRONG
-}
+public enum PasswordStrength {NORMAL, INVALID, WEAK, STRONG}
