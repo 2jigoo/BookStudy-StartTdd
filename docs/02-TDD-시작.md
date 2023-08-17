@@ -210,7 +210,7 @@
 
 - 수정 후에도 항상 테스트가 통과하는지 확인해야한다.
 
-#### 네 번째 테스트: 값이 없는 경우
+### 네 번째 테스트: 값이 없는 경우
 
 * 예외상황에 대한 테스트
 * null이거나 빈 문자열인 경우 
@@ -226,13 +226,13 @@ https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b9
 
 <br>
 
-#### 다섯 번째 테스트: 대문자를 포함하지 않고 나머지 조건을 충족하는 경우
+### 다섯 번째 테스트: 대문자를 포함하지 않고 나머지 조건을 충족하는 경우
 → `PasswordStrength.NORMAL`
 
 https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L35-L38
 <br>
 
-#### 여섯 번째 테스트: 길이가 8글자 이상인 조건만 충족하는 경우
+### 여섯 번째 테스트: 길이가 8글자 이상인 조건만 충족하는 경우
 → `PasswordStrength.WEAK`
 
 * `PasswordStrength.WEAK` 추가
@@ -253,7 +253,7 @@ https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b9
 
 <br>
 
-#### 일곱 번째 테스트: 숫자 포함 조건만 충족하는 경우
+### 일곱 번째 테스트: 숫자 포함 조건만 충족하는 경우
 https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L45-L48
 
 > 코드를 정리하고 싶지만, 아직 아이디어가 떠오르지 않는다.  
@@ -261,13 +261,13 @@ https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b9
 
 <br>
 
-#### 여덟 번째 테스트: 대문자 포함 조건만 충족하는 경우
+### 여덟 번째 테스트: 대문자 포함 조건만 충족하는 경우
 → `PasswordStrength.WEAK`
 
 https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L50-L53
 
 <br>
-#### 코드 정리: meter() 메서드 리팩토링
+### 코드 정리: meter() 메서드 리팩토링
 
 * 만족한 규칙의 개수를 세는 로직을 메서드로 분리하여, 전반적인 로직을 한 눈에 파악하기 쉬워짐
 
@@ -276,7 +276,7 @@ https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b9
 
 <br>
 
-#### 아홉 번째 테스트: 아무 조건도 충족하지 않는 경우
+### 아홉 번째 테스트: 아무 조건도 충족하지 않는 경우
 → `PasswordStrength.WEAK`
 
 1. 새로운 테스트를 추가하거나 기존 코드를 수정하면 테스트 실행
@@ -285,13 +285,13 @@ https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b9
 https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/test/java/chap02/PasswordStrengthMeterTest.java#L55-L58
 <br>
 
-#### 코드 정리: 코드 가독성 개선
+### 코드 정리: 코드 가독성 개선
 
 https://github.com/2jigoo/BookStudy-StartTdd/blob/8835e7dc407c890586826122bac9b956b1381610/src/main/java/chap02/PasswordStrengthMeter.java#L30-L37
 
 * 길이, 숫자 포함 여부, 대문자 포함 여부 규칙을 확인할 수 있는 getMetCriteriaCounts() 메서드를 만들어 가독성개선.
 
-#### 테스트에서 메인으로 코드 이동
+### 테스트에서 메인으로 코드 이동
 
 * 구현 완료 후 배포 대상인 메인 소스 폴더로 이동
 
