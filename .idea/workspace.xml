@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#11 chap03:코드정리">
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공">
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDebitRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap07/CardNumberValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap03/ExpriyDateCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/PayData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap03/PayData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -218,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692201454278</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공">
+      <option name="closed" value="true" />
+      <created>1692202301977</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692202301977</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +267,7 @@
     <MESSAGE value="#11 chap03:코드정리:상수를 변수로" />
     <MESSAGE value="#11 chap03:예외 상황 테스트 추가" />
     <MESSAGE value="#11 chap03:코드정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 chap03:코드정리" />
+    <MESSAGE value="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공" />
   </component>
 </project>
