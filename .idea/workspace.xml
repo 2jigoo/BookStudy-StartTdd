@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDebitRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap07/CardNumberValidator.java" afterDir="false" />
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:대역의 필요성">
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitInfoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitRegister_Stub_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/MemoryAutoDebitInfoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/StubCardNumberValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/ExpriyDateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap03/ExpriyDateCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap03/PayData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap03/PayData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chap07/AutoDebitRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chap07/CardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/CardNumberValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -79,14 +83,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jongha&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "jongha",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="chap07" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.ExpriyDateCalculatorTest.십만원을_납부하면_1년_제공">
     <configuration name="ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -235,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692202301977</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="#20 chap07:대역의 필요성">
+      <option name="closed" value="true" />
+      <created>1693846839263</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693846839263</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +290,7 @@
     <MESSAGE value="#11 chap03:예외 상황 테스트 추가" />
     <MESSAGE value="#11 chap03:코드정리" />
     <MESSAGE value="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공" />
+    <MESSAGE value="#20 chap07:대역의 필요성" />
+    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:대역의 필요성" />
   </component>
 </project>
