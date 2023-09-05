@@ -11,9 +11,12 @@ public class UserRegisterService {
     private WeakPasswordChecker passwordChecker;
     private UserRepository userRepository;
 
-    public UserRegisterService(WeakPasswordChecker passwordChecker, UserRepository userRepository) {
+    private EmailNotifier emailNotifier;
+
+    public UserRegisterService(WeakPasswordChecker passwordChecker, UserRepository userRepository, EmailNotifier emailNotifier) {
         this.passwordChecker = passwordChecker;
         this.userRepository = userRepository;
+        this.emailNotifier = emailNotifier;
     }
 
     public void register(String id, String pw, String email) {
@@ -27,6 +30,8 @@ public class UserRegisterService {
         }
 
         userRepository.save(new User(id, pw, email));
+
+        emailNotifier.sendRegisterEmail(email);
     }
 
 }
