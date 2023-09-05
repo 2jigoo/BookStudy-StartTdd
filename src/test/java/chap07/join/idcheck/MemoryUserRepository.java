@@ -1,9 +1,9 @@
-package chap07.User;
+package chap07.join.idcheck;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class MemoryUserRepository implements UserRepository{
+public class MemoryUserRepository implements UserRepository {
     private Map<String, User> users = new HashMap<>();
 
     @Override

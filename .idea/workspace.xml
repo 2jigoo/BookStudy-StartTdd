@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:약한 암호 확인 기능에 스텁 사용">
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/User/DupIdException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/User/MemoryUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/User/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/User/UserRepository.java" afterDir="false" />
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:리포지토리를 가짜 구현으로 사용">
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/join/spy/EmailNotifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/join/spy/SpyEmailNotifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister_Fake_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister_Fake_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister_Stub_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister_Stub_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/CardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/CardNumberValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/MemoryAutoDebitInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/MemoryAutoDebitInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/StubCardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/StubCardNumberValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/DupIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/DupIdException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/MemoryUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/MemoryUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/StubWeakPasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/StubWeakPasswordChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/UserRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/UserRegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/WeakPasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/WeakPasswordChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/WeakPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/WeakPasswordException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +52,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -120,33 +117,17 @@
       <recent name="chap07" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRegisterTest.noDupId_RegisterSuccess">
-    <configuration name="ExpriyDateCalculatorTest.십만원을_납부하면_1년_제공" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap03.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chap03" />
-      <option name="MAIN_CLASS_NAME" value="chap03.ExpriyDateCalculatorTest" />
-      <option name="METHOD_NAME" value="십만원을_납부하면_1년_제공" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserRegisterTest.whenRegisterThenSendMail">
     <configuration name="UserRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.User.*" />
+          <option name="PATTERN" value="chap07.join.passwordcheck.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="chap07.User" />
-      <option name="MAIN_CLASS_NAME" value="chap07.User.UserRegisterTest" />
+      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,12 +137,12 @@
       <module name="Study.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.User.*" />
+          <option name="PATTERN" value="chap07.join.passwordcheck.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="chap07.User" />
-      <option name="MAIN_CLASS_NAME" value="chap07.User.UserRegisterTest" />
+      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
       <option name="METHOD_NAME" value="WeakPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -172,12 +153,12 @@
       <module name="Study.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.User.*" />
+          <option name="PATTERN" value="chap07.join.passwordcheck.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="chap07.User" />
-      <option name="MAIN_CLASS_NAME" value="chap07.User.UserRegisterTest" />
+      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
       <option name="METHOD_NAME" value="dupIdExists" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -188,13 +169,29 @@
       <module name="Study.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.User.*" />
+          <option name="PATTERN" value="chap07.join.passwordcheck.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="chap07.User" />
-      <option name="MAIN_CLASS_NAME" value="chap07.User.UserRegisterTest" />
+      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
       <option name="METHOD_NAME" value="noDupId_RegisterSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRegisterTest.whenRegisterThenSendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap07.join.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chap07.join" />
+      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
+      <option name="METHOD_NAME" value="whenRegisterThenSendMail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegisterTest.whenRegisterThenSendMail" />
         <item itemvalue="JUnit.UserRegisterTest.noDupId_RegisterSuccess" />
         <item itemvalue="JUnit.UserRegisterTest.dupIdExists" />
         <item itemvalue="JUnit.UserRegisterTest.WeakPassword" />
         <item itemvalue="JUnit.UserRegisterTest" />
-        <item itemvalue="JUnit.ExpriyDateCalculatorTest.십만원을_납부하면_1년_제공" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693877839474</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="#20 chap07:리포지토리를 가짜 구현으로 사용">
+      <created>1693879783559</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693879783559</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,6 +313,7 @@
     <MESSAGE value="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공" />
     <MESSAGE value="#20 chap07:대역의 필요성" />
     <MESSAGE value="#20 chap07:약한 암호 확인 기능에 스텁 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:약한 암호 확인 기능에 스텁 사용" />
+    <MESSAGE value="#20 chap07:리포지토리를 가짜 구현으로 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:리포지토리를 가짜 구현으로 사용" />
   </component>
 </project>

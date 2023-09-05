@@ -1,4 +1,4 @@
-package chap07.User;
+package chap07.join.idcheck;
 
 public class User {
     private String id;

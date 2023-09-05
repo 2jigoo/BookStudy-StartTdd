@@ -1,6 +1,13 @@
-package chap07.User;
+package chap07.join;
 
-import org.junit.jupiter.api.BeforeAll;
+import chap07.join.idcheck.DupIdException;
+import chap07.join.idcheck.MemoryUserRepository;
+import chap07.join.idcheck.User;
+import chap07.join.idcheck.UserRepository;
+import chap07.join.passwordcheck.StubWeakPasswordChecker;
+import chap07.join.passwordcheck.WeakPasswordException;
+import chap07.join.spy.EmailNotifier;
+import chap07.join.spy.SpyEmailNotifier;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -11,10 +18,11 @@ class UserRegisterTest {
     private UserRegister userRegister;
     private StubWeakPasswordChecker stubPasswordChecker = new StubWeakPasswordChecker();
     private MemoryUserRepository fakeRepository = new MemoryUserRepository();
+    private SpyEmailNotifier spyEmailNotifier = new SpyEmailNotifier();
 
     @BeforeEach
     void setUp(){
-        userRegister = new UserRegister(stubPasswordChecker,fakeRepository);
+        userRegister = new UserRegister(stubPasswordChecker,fakeRepository,spyEmailNotifier);
     }
 
     @DisplayName("이미 같은 ID가 존재하면 가입 실패")
@@ -45,6 +53,15 @@ class UserRegisterTest {
         User savedUser = fakeRepository.findById("id");//가입결과 확인
         assertEquals("id",savedUser.getId());
         assertEquals("email",savedUser.getEmail());
+    }
+
+    @DisplayName("가입하면 메일을 전송함")
+    @Test
+    void whenRegisterThenSendMail(){
+        userRegister.register("id","pw","email@email.com");
+
+        assertTrue(spyEmailNotifier.isCalled());
+        assertEquals("email@email.com", spyEmailNotifier.getEmail());
     }
 
 }
