@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:모의 객체로 스텁과 스파이 대체">
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockOvercaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,39 @@
       <recent name="chap07" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRegisterMockTest.whenRegisterThenSendMail">
+  <component name="RunManager" selected="JUnit.UserRegisterMockOvercaseTest.같은_ID가_없으면_가입">
+    <configuration name="UserRegisterMockOvercaseTest.같은_ID가_없으면_가입" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap07.join.Mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chap07.join.Mockito" />
+      <option name="MAIN_CLASS_NAME" value="chap07.join.Mockito.UserRegisterMockOvercaseTest" />
+      <option name="METHOD_NAME" value="같은_ID가_없으면_가입" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRegisterMockOvercaseTest.noDupId_RegisterSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap07.join.Mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chap07.join.Mockito" />
+      <option name="MAIN_CLASS_NAME" value="chap07.join.Mockito.UserRegisterMockOvercaseTest" />
+      <option name="METHOD_NAME" value="noDupId_RegisterSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRegisterMockTest.checkPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study.test" />
       <extension name="coverage">
@@ -141,38 +172,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRegisterTest.dupIdExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap07.join.passwordcheck.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chap07.User" />
-      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
-      <option name="METHOD_NAME" value="dupIdExists" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRegisterTest.noDupId_RegisterSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap07.join.passwordcheck.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chap07.User" />
-      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
-      <option name="METHOD_NAME" value="noDupId_RegisterSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserRegisterTest.whenRegisterThenSendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study.test" />
       <extension name="coverage">
@@ -191,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegisterMockOvercaseTest.같은_ID가_없으면_가입" />
+        <item itemvalue="JUnit.UserRegisterMockOvercaseTest.noDupId_RegisterSuccess" />
         <item itemvalue="JUnit.UserRegisterMockTest.whenRegisterThenSendMail" />
         <item itemvalue="JUnit.UserRegisterMockTest.checkPassword" />
         <item itemvalue="JUnit.UserRegisterTest.whenRegisterThenSendMail" />
-        <item itemvalue="JUnit.UserRegisterTest.noDupId_RegisterSuccess" />
-        <item itemvalue="JUnit.UserRegisterTest.dupIdExists" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +276,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693883773476</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용">
+      <option name="closed" value="true" />
+      <created>1693913611846</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693913611846</updated>
+    </task>
+    <task id="LOCAL-00011" summary="#20 chap07:모의 객체로 스텁과 스파이 대체">
+      <option name="closed" value="true" />
+      <created>1693913768755</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1693913768755</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,6 +329,7 @@
     <MESSAGE value="#20 chap07:약한 암호 확인 기능에 스텁 사용" />
     <MESSAGE value="#20 chap07:리포지토리를 가짜 구현으로 사용" />
     <MESSAGE value="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용" />
+    <MESSAGE value="#20 chap07:모의 객체로 스텁과 스파이 대체" />
+    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:모의 객체로 스텁과 스파이 대체" />
   </component>
 </project>
