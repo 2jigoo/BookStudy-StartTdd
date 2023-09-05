@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용">
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,18 +87,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "jongha",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jongha&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -109,33 +108,34 @@
       <recent name="chap07" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRegisterTest.whenRegisterThenSendMail">
-    <configuration name="UserRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserRegisterMockTest.whenRegisterThenSendMail">
+    <configuration name="UserRegisterMockTest.checkPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.join.passwordcheck.*" />
+          <option name="PATTERN" value="chap07.join.Mockito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chap07.User" />
-      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="chap07.join.Mockito" />
+      <option name="MAIN_CLASS_NAME" value="chap07.join.Mockito.UserRegisterMockTest" />
+      <option name="METHOD_NAME" value="checkPassword" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRegisterTest.WeakPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRegisterMockTest.whenRegisterThenSendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.join.passwordcheck.*" />
+          <option name="PATTERN" value="chap07.join.Mockito.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="chap07.User" />
-      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
-      <option name="METHOD_NAME" value="WeakPassword" />
+      <option name="PACKAGE_NAME" value="chap07.join.Mockito" />
+      <option name="MAIN_CLASS_NAME" value="chap07.join.Mockito.UserRegisterMockTest" />
+      <option name="METHOD_NAME" value="whenRegisterThenSendMail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegisterMockTest.whenRegisterThenSendMail" />
+        <item itemvalue="JUnit.UserRegisterMockTest.checkPassword" />
         <item itemvalue="JUnit.UserRegisterTest.whenRegisterThenSendMail" />
         <item itemvalue="JUnit.UserRegisterTest.noDupId_RegisterSuccess" />
         <item itemvalue="JUnit.UserRegisterTest.dupIdExists" />
-        <item itemvalue="JUnit.UserRegisterTest.WeakPassword" />
-        <item itemvalue="JUnit.UserRegisterTest" />
       </list>
     </recent_temporary>
   </component>
