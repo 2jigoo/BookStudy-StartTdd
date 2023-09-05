@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:리포지토리를 가짜 구현으로 사용">
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/join/spy/EmailNotifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/join/spy/SpyEmailNotifier.java" afterDir="false" />
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용">
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/DupIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/DupIdException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/MemoryUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/MemoryUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/StubWeakPasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/StubWeakPasswordChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/UserRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/UserRegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/WeakPasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/WeakPasswordChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/User/WeakPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/WeakPasswordException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +44,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -278,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693879783559</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용">
+      <created>1693883773476</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693883773476</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,6 +313,7 @@
     <MESSAGE value="#20 chap07:대역의 필요성" />
     <MESSAGE value="#20 chap07:약한 암호 확인 기능에 스텁 사용" />
     <MESSAGE value="#20 chap07:리포지토리를 가짜 구현으로 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:리포지토리를 가짜 구현으로 사용" />
+    <MESSAGE value="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용" />
   </component>
 </project>
