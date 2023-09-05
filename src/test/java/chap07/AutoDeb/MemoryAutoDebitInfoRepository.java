@@ -1,9 +1,9 @@
-package chap07;
+package chap07.AutoDeb;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class MemoryAutoDebitInfoRepository implements AutoDebitInfoRepository{
+public class MemoryAutoDebitInfoRepository implements AutoDebitInfoRepository {
     private Map<String, AutoDebitInfo> infos = new HashMap<>();
 
     @Override

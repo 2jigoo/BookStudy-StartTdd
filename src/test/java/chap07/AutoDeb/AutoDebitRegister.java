@@ -1,8 +1,8 @@
-package chap07;
+package chap07.AutoDeb;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+@Deprecated
 public class AutoDebitRegister {
     private CardNumberValidator validator;
     private AutoDebitInfoRepository repository;

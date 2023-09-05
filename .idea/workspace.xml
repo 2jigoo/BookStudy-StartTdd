@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:대역의 필요성">
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitInfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitRegister_Stub_Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/MemoryAutoDebitInfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/StubCardNumberValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/CardValidity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/User/StubWeakPasswordChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/User/UserRegisterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/User/WeakPasswordChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/User/WeakPasswordException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap07/AutoDebitRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap07/CardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/CardNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitRegister_Fake_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister_Fake_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDebitRegister_Stub_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister_Stub_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/CardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/CardNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/MemoryAutoDebitInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/MemoryAutoDebitInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/StubCardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/StubCardNumberValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +39,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Study" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -55,7 +68,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="jongha2" />
+        <entry key="$PROJECT_DIR$" value="jongha" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,6 +87,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -90,6 +106,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "jongha",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
@@ -98,34 +115,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="chap07.User" />
       <recent name="chap07" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExpriyDateCalculatorTest.십만원을_납부하면_1년_제공">
-    <configuration name="ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;chap03.ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserRegisterTest.WeakPassword">
     <configuration name="ExpriyDateCalculatorTest.십만원을_납부하면_1년_제공" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study.test" />
       <extension name="coverage">
@@ -158,22 +152,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap03.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chap03" />
-      <option name="MAIN_CLASS_NAME" value="chap03.ExpriyDateCalculatorTest" />
-      <option name="METHOD_NAME" value="첫_납부일과_만료일_일자가_다를때_만원_납부" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_이만원_이상_납부" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study.test" />
       <extension name="coverage">
@@ -190,13 +168,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap07.User.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chap07.User" />
+      <option name="MAIN_CLASS_NAME" value="chap07.User.UserRegisterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRegisterTest.WeakPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap07.User.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="chap07.User" />
+      <option name="MAIN_CLASS_NAME" value="chap07.User.UserRegisterTest" />
+      <option name="METHOD_NAME" value="WeakPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegisterTest.WeakPassword" />
+        <item itemvalue="JUnit.UserRegisterTest" />
         <item itemvalue="JUnit.ExpriyDateCalculatorTest.십만원을_납부하면_1년_제공" />
         <item itemvalue="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_이만원_이상_납부" />
         <item itemvalue="JUnit.ExpriyDateCalculatorTest.이만원_이상_납부하면_비례해서_만료일_계산" />
-        <item itemvalue="JUnit.ExpriyDateCalculatorTest.첫_납부일과_만료일_일자가_다를때_만원_납부" />
-        <item itemvalue="Gradle.ExpriyDateCalculatorTest.만원_납부하면_한달_뒤가_만료일이_됨" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +280,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="jongha" />
+                        <option value="origin/jongha" />
                       </list>
                     </value>
                   </entry>

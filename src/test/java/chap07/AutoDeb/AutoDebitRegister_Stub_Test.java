@@ -1,10 +1,7 @@
-package chap07;
+package chap07.AutoDeb;
 
-import jdk.jshell.spi.SPIResolutionException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class AutoDebitRegister_Stub_Test {
     private AutoDebitRegister register;
