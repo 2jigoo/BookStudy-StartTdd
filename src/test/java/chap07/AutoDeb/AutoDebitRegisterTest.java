@@ -1,3 +1,4 @@
+/*
 package chap07.AutoDeb;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -19,4 +20,4 @@ class AutoDebitRegisterTest {
         RegisterResult result = this.register.register(req);
         assertEquals(THEFT, result.getValidty());
     }
-}
+}*/

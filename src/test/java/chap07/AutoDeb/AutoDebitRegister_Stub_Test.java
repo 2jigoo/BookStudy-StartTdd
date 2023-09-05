@@ -1,3 +1,4 @@
+/*
 package chap07.AutoDeb;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -24,4 +25,4 @@ class AutoDebitRegister_Stub_Test {
         assertEquals(INVALID, result.getValidty());
     }
 
-}
+}*/

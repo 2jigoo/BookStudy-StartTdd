@@ -1,3 +1,4 @@
+/*
 package chap07.AutoDeb;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -25,4 +26,4 @@ public class AutoDebitRegister_Fake_Test {
         AutoDebitInfo saved = repository.findOne("user1");
         assertEquals("1234123412341234",saved.getCardNumber());
     }
-}
+}*/

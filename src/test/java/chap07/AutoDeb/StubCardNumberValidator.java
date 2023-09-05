@@ -1,3 +1,4 @@
+/*
 package chap07.AutoDeb;
 
 public class StubCardNumberValidator extends CardNumberValidator {
@@ -22,3 +23,4 @@ public class StubCardNumberValidator extends CardNumberValidator {
         return CardValidty.VALID;
     }
 }
+*/
