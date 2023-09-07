@@ -8,4 +8,8 @@ public class Product {
         return defaultPoint;
     }
 
+    public void setDefaultPoint(Integer defaultPoint) {
+        this.defaultPoint = defaultPoint;
+    }
+
 }

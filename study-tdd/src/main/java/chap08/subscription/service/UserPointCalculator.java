@@ -12,12 +12,18 @@ import java.time.LocalDate;
 
 public class UserPointCalculator {
 
+    private PointRule pointRule = new PointRule();
     private SubscriptionDao subscriptionDao;
     private ProductDao productDao;
 
     public UserPointCalculator(SubscriptionDao subscriptionDao, ProductDao productDao) {
         this.subscriptionDao = subscriptionDao;
         this.productDao = productDao;
+    }
+
+    // 테스트 코드에서 대역으로 계산 기능을 대체할 수 있음
+    public void setPointRule(PointRule pointRule) {
+        this.pointRule = pointRule;
     }
 
     public int calculatePoint(User user) {
@@ -29,16 +35,6 @@ public class UserPointCalculator {
         LocalDate now = LocalDate.now();
         Product product = productDao.selectById(subscription.getProductId());
 
-        int point = product.getDefaultPoint();
-
-        if (!subscription.isFinished(now)) {
-            point += 10;
-        }
-
-        if (subscription.getGrade() == Grade.GOLD) {
-            point += 100;
-        }
-
-        return point;
+        return pointRule.calculate(subscription, product, now);
     }
 }

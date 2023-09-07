@@ -5,9 +5,13 @@ import java.time.LocalDate;
 public class Subscription {
 
     private Long productId;
-    private Grade grade;
     private LocalDate expirationDate;
+    private Grade grade;
 
+    public Subscription(LocalDate expirationDate, Grade grade) {
+        this.expirationDate = expirationDate;
+        this.grade = grade;
+    }
 
     public Long getProductId() {
         return productId;
