@@ -14,8 +14,20 @@ public class PaySync {
 
     private PayInfoDao payInfoDao = new PayInfoDao();
 
+    /*
+    // 1. setter로 받기 (또는 생성자)
+    private String filePath = "/Users/jigoo/data/pay/cp0001.csv";
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
+
     public void sync() throws IOException {
-        Path path = Paths.get("/Users/jigoo/data/pay/cp0001.csv");
+    */
+
+    // 2. 메서드 파라미터로 받기
+    public void sync(String filePath) throws IOException {
+        Path path = Paths.get(filePath);
         List<PayInfo> payInfos = Files.lines(path)
                 .map(line -> {
                     String[] data = line.split(",");
