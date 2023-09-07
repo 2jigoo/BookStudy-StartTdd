@@ -4,9 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:모의 객체로 스텁과 스파이 대체">
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockOvercaseTest.java" afterDir="false" />
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:모의 객체를 과하게 사용하지 않기">
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/PaySync.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/AutoDebitInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/AutoDebitRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/CardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/CardNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/CardValidity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/CardValidity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/MemoryAutoDebitInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/MemoryAutoDebitInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/StubCardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/StubCardNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockOvercaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockOvercaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/UserRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/DupIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/idcheck/DupIdException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/MemoryUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/idcheck/MemoryUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/idcheck/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/idcheck/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/StubWeakPasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/passwordcheck/StubWeakPasswordChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/WeakPasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/passwordcheck/WeakPasswordChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/WeakPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/passwordcheck/WeakPasswordException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/spy/EmailNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/spy/EmailNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/spy/SpyEmailNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/spy/SpyEmailNotifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,24 +105,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jongha&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "jongha",
+    "last_opened_file_path": "C:/Users/yohan/IdeaProjects/Study/src/main/java/chap07/AutoDeb",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yohan\IdeaProjects\Study\src\main\java\chap07\AutoDeb" />
+      <recent name="C:\Users\yohan\IdeaProjects\Study\src\main\java\chap07" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="chap07.User" />
+      <recent name="chap07" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="chap07" />
     </key>
   </component>
@@ -292,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693913768755</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="#20 chap07:모의 객체를 과하게 사용하지 않기">
+      <option name="closed" value="true" />
+      <created>1693917208559</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1693917208559</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,6 +365,7 @@
     <MESSAGE value="#20 chap07:리포지토리를 가짜 구현으로 사용" />
     <MESSAGE value="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용" />
     <MESSAGE value="#20 chap07:모의 객체로 스텁과 스파이 대체" />
-    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:모의 객체로 스텁과 스파이 대체" />
+    <MESSAGE value="#20 chap07:모의 객체를 과하게 사용하지 않기" />
+    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:모의 객체를 과하게 사용하지 않기" />
   </component>
 </project>

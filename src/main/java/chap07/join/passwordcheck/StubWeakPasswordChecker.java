@@ -1,6 +1,6 @@
 package chap07.join.passwordcheck;
 
-public class StubWeakPasswordChecker implements WeakPasswordChecker{
+public class StubWeakPasswordChecker implements WeakPasswordChecker {
     private boolean weak;
 
     public void setWeak(boolean weak){

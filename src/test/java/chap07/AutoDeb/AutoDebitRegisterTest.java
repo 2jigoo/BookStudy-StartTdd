@@ -1,8 +1,10 @@
-/*
+
 package chap07.AutoDeb;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AutoDebitRegisterTest {
     private AutoDebitRegister register;
@@ -18,6 +20,14 @@ class AutoDebitRegisterTest {
         //업체에서 받은 테스트용 유효한 카드번호 사용
         AutoDebitReq req = new AutoDebitReq("user1", "1234567890123456");
         RegisterResult result = this.register.register(req);
+        assertEquals(VALID, result.getValidty());
+    }
+
+    @Test
+    void theftCard(){
+        //업체에서 받은 도난 테스트용 유효한 카드번호 사용
+        AutoDebitReq req = new AutoDebitReq("user1", "1234567890123456");
+        RegisterResult result = this.register.register(req);
         assertEquals(THEFT, result.getValidty());
     }
-}*/
+}

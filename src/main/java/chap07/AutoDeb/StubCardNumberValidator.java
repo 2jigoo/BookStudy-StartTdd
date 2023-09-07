@@ -1,4 +1,4 @@
-/*
+package chap07.AutoDeb;/*
 package chap07.AutoDeb;
 
 public class StubCardNumberValidator extends CardNumberValidator {

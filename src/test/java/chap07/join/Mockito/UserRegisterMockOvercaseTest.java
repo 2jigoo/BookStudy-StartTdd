@@ -1,6 +1,5 @@
 package chap07.join.Mockito;
 
-import chap07.join.UserRegister;
 import chap07.join.idcheck.MemoryUserRepository;
 import chap07.join.idcheck.User;
 import chap07.join.idcheck.UserRepository;
