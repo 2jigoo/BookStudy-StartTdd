@@ -12,7 +12,19 @@ import java.util.stream.Collectors;
 
 public class PaySync {
 
-    private PayInfoDao payInfoDao = new PayInfoDao();
+    private PayInfoDao payInfoDao;
+
+    // 1. 의존 대상을 생성자로 주입 받기
+    public PaySync(PayInfoDao payInfoDao) {
+        this.payInfoDao = payInfoDao;
+    }
+
+    /*
+    // 2. 의존 대상을 setter로 주입 받기
+    public void setPayInfoDao(PayInfoDao payInfoDao) {
+        this.payInfoDao = payInfoDao;
+    }
+    */
 
     /*
     // 1. setter로 받기 (또는 생성자)

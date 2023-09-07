@@ -12,4 +12,16 @@ public class PayInfo {
         this.column3 = column3;
     }
 
+    public String getColumn1() {
+        return column1;
+    }
+
+    public String getColumn2() {
+        return column2;
+    }
+
+    public int getColumn3() {
+        return column3;
+    }
+
 }
