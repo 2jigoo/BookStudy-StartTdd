@@ -1,4 +1,4 @@
-package chap07.user;
+package chap07.user.service;
 
 import chap07.user.entity.User;
 import chap07.user.repository.UserRepository;

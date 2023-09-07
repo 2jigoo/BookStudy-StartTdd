@@ -1,4 +1,4 @@
-package chap07.user;
+package chap07.user.service;
 
 import chap07.debit.dto.AutoDebitReq;
 import chap07.debit.entity.CardValidity;
