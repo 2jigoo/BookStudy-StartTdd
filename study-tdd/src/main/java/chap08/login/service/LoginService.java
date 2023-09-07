@@ -10,19 +10,19 @@ public class LoginService {
     private String authKey = "somekey";
     private CustomerRepository customerRepository;
 
+    private AuthService authService = new AuthService();
+
     public LoginService(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
 
-    public LoginResult login(String id, String pw) {
-        int response = 0;
-        boolean authorized = AuthUtil.authorize(authKey);
+    public void setAuthService(AuthService authService) {
+        this.authService = authService;
+    }
 
-        if (authorized) {
-            response = AuthUtil.authenticate(id, pw);
-        } else {
-            response = -1;
-        }
+
+    public LoginResult login(String id, String pw) {
+        int response = authService.ahthenticate(id, pw);
 
         if (response == -1) {
             return LoginResult.badAuthKey();
@@ -31,9 +31,9 @@ public class LoginService {
         if (response == 1) {
             Customer customer = customerRepository.findOne(id);
             return LoginResult.authenticated(customer);
-        } else {
-            return LoginResult.fail(response);
         }
+
+        return LoginResult.fail(response);
     }
 
 
