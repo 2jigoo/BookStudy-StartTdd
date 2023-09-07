@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#20 chap07:모의 객체를 과하게 사용하지 않기">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/PaySync.java" afterDir="false" />
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#23 chap09:정적메서드 사용">
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/UserPointCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/AutoDebitInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/AutoDebitRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/AutoDebitRegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/CardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/CardNumberValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/CardValidity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/CardValidity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/MemoryAutoDebitInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/MemoryAutoDebitInfoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/AutoDeb/StubCardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/StubCardNumberValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockOvercaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockOvercaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chap07/join/Mockito/UserRegisterMockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/UserRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/DupIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/idcheck/DupIdException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/MemoryUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/idcheck/MemoryUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/idcheck/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/idcheck/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/idcheck/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/StubWeakPasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/passwordcheck/StubWeakPasswordChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/WeakPasswordChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/passwordcheck/WeakPasswordChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/passwordcheck/WeakPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/passwordcheck/WeakPasswordException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/spy/EmailNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/spy/EmailNotifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chap07/join/spy/SpyEmailNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/join/spy/SpyEmailNotifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +308,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693917208559</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="#23 chap09:하드 코딩된 경로">
+      <option name="closed" value="true" />
+      <created>1694101777888</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694101777888</updated>
+    </task>
+    <task id="LOCAL-00014" summary="#23 chap09:정적메서드 사용">
+      <option name="closed" value="true" />
+      <created>1694102508192</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694102508192</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,6 +363,8 @@
     <MESSAGE value="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용" />
     <MESSAGE value="#20 chap07:모의 객체로 스텁과 스파이 대체" />
     <MESSAGE value="#20 chap07:모의 객체를 과하게 사용하지 않기" />
-    <option name="LAST_COMMIT_MESSAGE" value="#20 chap07:모의 객체를 과하게 사용하지 않기" />
+    <MESSAGE value="#23 chap09:하드 코딩된 경로" />
+    <MESSAGE value="#23 chap09:정적메서드 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="#23 chap09:정적메서드 사용" />
   </component>
 </project>
