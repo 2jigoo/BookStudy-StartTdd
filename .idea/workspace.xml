@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#23 chap09:정적메서드 사용">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/UserPointCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#23 chap09:실행 시점에 따라 달라지는 결과">
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/PointRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap08/PointRuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chap08/UserPointCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap08/UserPointCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +42,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -108,6 +109,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="chap08" />
       <recent name="chap07.User" />
       <recent name="chap07" />
     </key>
@@ -324,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694102508192</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="#23 chap09:실행 시점에 따라 달라지는 결과">
+      <option name="closed" value="true" />
+      <created>1694103147217</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1694103147217</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,6 +375,7 @@
     <MESSAGE value="#20 chap07:모의 객체를 과하게 사용하지 않기" />
     <MESSAGE value="#23 chap09:하드 코딩된 경로" />
     <MESSAGE value="#23 chap09:정적메서드 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="#23 chap09:정적메서드 사용" />
+    <MESSAGE value="#23 chap09:실행 시점에 따라 달라지는 결과" />
+    <option name="LAST_COMMIT_MESSAGE" value="#23 chap09:실행 시점에 따라 달라지는 결과" />
   </component>
 </project>
