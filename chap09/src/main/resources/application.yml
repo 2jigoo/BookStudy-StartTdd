@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:33900/test
+    username: root
+    password: 1
+    hikari:
+      maximum-pool-size: 4
+  jpa:
+    database: mysql
+    show-sql: true
+
+logging:
+  level:
+    root: INFO
