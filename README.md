@@ -8,4 +8,4 @@
 - [Chapter 6. 테스트 코드의 구성](https://github.com/2jigoo/BookStudy-StartTdd/blob/main/docs/06-테스트-코드의-구성.md)
 - [Chapter 7. 대역](https://github.com/2jigoo/BookStudy-StartTdd/blob/main/docs/07-%EB%8C%80%EC%97%AD.md)
 - [Chapter 8. 테스트 가능한 설계](https://github.com/2jigoo/BookStudy-StartTdd/blob/main/docs/08-테스트-가능한-설계.md)
-- [Chapter 9. 테스트 범위와 종류](https://github.com/2jigoo/BookStudy-StartTdd/blob/main/docs/08-테스트-가능한-설계.md)
+- [Chapter 9. 테스트 범위와 종류](https://github.com/2jigoo/BookStudy-StartTdd/blob/main/docs/09-테스트-범위와-종류.md)
