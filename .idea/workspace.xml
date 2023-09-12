@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#23 chap09:실행 시점에 따라 달라지는 결과">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/PointRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap08/PointRuleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap08/UserPointCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap08/UserPointCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/UserRegisterInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap09/CardNumberValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap09/UserRegisterIntTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/CardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/CardNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chap08/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap08/LoginService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,19 +92,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "jongha",
-    "last_opened_file_path": "C:/Users/yohan/IdeaProjects/Study/src/main/java/chap07/AutoDeb",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jongha&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yohan/IdeaProjects/Study/src/main/java/chap07/AutoDeb&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7a198903705d696abd12639a1cfc2598&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yohan\IdeaProjects\Study\src\main\java\chap07\AutoDeb" />
@@ -109,6 +122,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="chap07.AutoDeb" />
+      <recent name="chap09" />
       <recent name="chap08" />
       <recent name="chap07.User" />
       <recent name="chap07" />
@@ -216,6 +231,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692195995980</updated>
+      <workItem from="1694154545094" duration="876000" />
+      <workItem from="1694160049960" duration="2767000" />
+      <workItem from="1694401399758" duration="4639000" />
+      <workItem from="1694476858202" duration="371000" />
+      <workItem from="1694500434842" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="#11 chap03: 예외 상황 테스트 진행 계속">
       <option name="closed" value="true" />
@@ -336,6 +356,9 @@
     </task>
     <option name="localTasksCounter" value="16" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

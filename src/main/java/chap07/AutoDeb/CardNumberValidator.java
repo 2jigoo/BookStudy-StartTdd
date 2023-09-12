@@ -1,4 +1,4 @@
-package chap07.AutoDeb;/*
+package chap07.AutoDeb;
 package chap07.AutoDeb;
 
 import java.io.IOException;
@@ -29,4 +29,4 @@ public class CardNumberValidator {
         }
     }
 }
-*/
+
