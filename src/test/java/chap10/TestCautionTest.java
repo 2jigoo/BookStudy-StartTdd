@@ -1,14 +1,18 @@
 package chap10;
 
+import net.bytebuddy.asm.Advice;
+import org.apache.catalina.User;
 import org.apache.catalina.util.Introspection;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
 
 import java.text.Format;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.assertj.core.api.BDDAssertions.then;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TestCautionTest {
@@ -52,6 +56,27 @@ class TestCautionTest {
     assertEquals(date.getYear() + "년" +
             date.getMonthValue() + "월" +
             date.getDayOfMonth() + "일", dateStr);
+    }
+
+    @DisplayName("같은 ID가 없으면 가입 성공함")
+    @Test
+    void noDupId_RegisterSuccess(){
+        userRegister.register("id", "pw", "email");
+
+        User savedUser = fakeRepository.finById("id");
+        assertEquals("email", savedUser.getEmail());
+    }
+
+    @DisplayName("가입하면 메일을 전송함")
+    @Test
+    void whenRegisterThenSendMail(){
+        userRegister.register("id", "pw", "email@email.com");
+
+        Advice.ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+        then(mockEmailNotifier).should().sendRegisterEmail(captor.capture());
+
+        String realEmail = captor.getValue();
+        assertEquals("email@email.com", realEmail);
     }
 
 }
