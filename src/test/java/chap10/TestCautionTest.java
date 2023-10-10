@@ -1,11 +1,14 @@
 package chap10;
 
+import chap07.join.passwordcheck.WeakPasswordException;
 import net.bytebuddy.asm.Advice;
 import org.apache.catalina.User;
 import org.apache.catalina.util.Introspection;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
+import org.mockito.BDDMockito;
+import org.mockito.Mockito;
 
 import java.text.Format;
 import java.time.LocalDate;
@@ -77,6 +80,18 @@ class TestCautionTest {
 
         String realEmail = captor.getValue();
         assertEquals("email@email.com", realEmail);
+    }
+
+    @DisplayName("약한 암호면 가입 싶패")
+    @Test
+    void weakPassword(){
+        BDDMockito
+                .given(mockPasswordChecker.checkPasswordWeak(Mockito.anyString()))
+                .willReturn(true);
+
+        assertThrows(WeakPasswordException.class, ()->{
+            userRegister.register("id","pw","email");
+        });
     }
 
 }
