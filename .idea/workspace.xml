@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="#23 chap09:실행 시점에 따라 달라지는 결과">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/UserRegisterInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap09/CardNumberValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/chap09/UserRegisterIntTest.java" afterDir="false" />
+    <list default="true" id="6c13d2b0-26bf-4674-9e8f-e282b27cdbdb" name="변경" comment="#28 정확하게 일치하는 값으로 모의 객체 설정하지 않기">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap10/BizClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap10/BulkLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap10/Exporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap10/TestBizClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap10/BizClockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap10/BulkLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/chap10/ExporterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/CardNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap07/AutoDeb/CardNumberValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap08/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap08/LoginService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +30,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Study" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -47,21 +42,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="JongHa11 &lt;ljh7859@clipsoft.co.kr&gt;" />
-      </list>
-    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="jongha" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,13 +58,13 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Jonghai&quot;
+    &quot;assignee&quot;: &quot;JongHa11&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="d0aa7cd1-07bc-44a0-92a8-46ee07a35b0a" />
+        <option name="accountId" value="8ab1b83f-ecc6-4228-9fcc-91c34715af46" />
         <option name="url" value="https://github.com/2jigoo/BookStudy-StartTdd.git" />
       </UrlAndAccount>
     </option>
@@ -84,10 +73,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2U4PgPMUGg4xGI2sezAmcuif4Pu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2WZcDNePyMpiX3BQruCUsbpAMNH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -100,261 +88,73 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;jongha&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/yohan/IdeaProjects/Study/src/main/java/chap07/AutoDeb&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;7a198903705d696abd12639a1cfc2598&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\yohan\IdeaProjects\Study\src\main\java\chap07\AutoDeb" />
-      <recent name="C:\Users\yohan\IdeaProjects\Study\src\main\java\chap07" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="chap07.AutoDeb" />
-      <recent name="chap09" />
-      <recent name="chap08" />
-      <recent name="chap07.User" />
-      <recent name="chap07" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="chap07" />
+      <recent name="chap10" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRegisterMockOvercaseTest.같은_ID가_없으면_가입">
-    <configuration name="UserRegisterMockOvercaseTest.같은_ID가_없으면_가입" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap07.join.Mockito.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chap07.join.Mockito" />
-      <option name="MAIN_CLASS_NAME" value="chap07.join.Mockito.UserRegisterMockOvercaseTest" />
-      <option name="METHOD_NAME" value="같은_ID가_없으면_가입" />
-      <option name="TEST_OBJECT" value="method" />
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BookStudy-StartTdd" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRegisterMockOvercaseTest.noDupId_RegisterSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap07.join.Mockito.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chap07.join.Mockito" />
-      <option name="MAIN_CLASS_NAME" value="chap07.join.Mockito.UserRegisterMockOvercaseTest" />
-      <option name="METHOD_NAME" value="noDupId_RegisterSuccess" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="BookStudy-StartTdd" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRegisterMockTest.checkPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap07.join.Mockito.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chap07.join.Mockito" />
-      <option name="MAIN_CLASS_NAME" value="chap07.join.Mockito.UserRegisterMockTest" />
-      <option name="METHOD_NAME" value="checkPassword" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRegisterMockTest.whenRegisterThenSendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap07.join.Mockito.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chap07.join.Mockito" />
-      <option name="MAIN_CLASS_NAME" value="chap07.join.Mockito.UserRegisterMockTest" />
-      <option name="METHOD_NAME" value="whenRegisterThenSendMail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRegisterTest.whenRegisterThenSendMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap07.join.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chap07.join" />
-      <option name="MAIN_CLASS_NAME" value="chap07.join.UserRegisterTest" />
-      <option name="METHOD_NAME" value="whenRegisterThenSendMail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.UserRegisterMockOvercaseTest.같은_ID가_없으면_가입" />
-        <item itemvalue="JUnit.UserRegisterMockOvercaseTest.noDupId_RegisterSuccess" />
-        <item itemvalue="JUnit.UserRegisterMockTest.whenRegisterThenSendMail" />
-        <item itemvalue="JUnit.UserRegisterMockTest.checkPassword" />
-        <item itemvalue="JUnit.UserRegisterTest.whenRegisterThenSendMail" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="04516a20-7ee4-44b9-913f-ff73e3cc4c4e" name="변경" comment="" />
-      <created>1692195995980</created>
+      <changelist id="6c13d2b0-26bf-4674-9e8f-e282b27cdbdb" name="변경" comment="" />
+      <created>1696943421603</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1692195995980</updated>
-      <workItem from="1694154545094" duration="876000" />
-      <workItem from="1694160049960" duration="2767000" />
-      <workItem from="1694401399758" duration="4639000" />
-      <workItem from="1694476858202" duration="371000" />
-      <workItem from="1694500434842" duration="310000" />
+      <updated>1696943421603</updated>
+      <workItem from="1696943422718" duration="6578000" />
+      <workItem from="1697559217429" duration="4353000" />
     </task>
-    <task id="LOCAL-00001" summary="#11 chap03: 예외 상황 테스트 진행 계속">
+    <task id="LOCAL-00001" summary="#28 두 개 이상을 검증하지 않기">
       <option name="closed" value="true" />
-      <created>1692199160213</created>
+      <created>1696954633395</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1692199160213</updated>
+      <updated>1696954633395</updated>
     </task>
-    <task id="LOCAL-00002" summary="#11 chap03:코드정리:상수를 변수로">
+    <task id="LOCAL-00002" summary="#28 두 개 이상을 검증하지 않기">
       <option name="closed" value="true" />
-      <created>1692199366414</created>
+      <created>1696955978559</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1692199366414</updated>
+      <updated>1696955978559</updated>
     </task>
-    <task id="LOCAL-00003" summary="#11 chap03:예외 상황 테스트 추가">
+    <task id="LOCAL-00003" summary="#28 정확하게 일치하는 값으로 모의 객체 설정하지 않기">
       <option name="closed" value="true" />
-      <created>1692199777419</created>
+      <created>1696957086015</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1692199777419</updated>
+      <updated>1696957086015</updated>
     </task>
-    <task id="LOCAL-00004" summary="#11 chap03:코드정리">
-      <option name="closed" value="true" />
-      <created>1692201454278</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1692201454278</updated>
-    </task>
-    <task id="LOCAL-00005" summary="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공">
-      <option name="closed" value="true" />
-      <created>1692202301977</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1692202301977</updated>
-    </task>
-    <task id="LOCAL-00006" summary="#20 chap07:대역의 필요성">
-      <option name="closed" value="true" />
-      <created>1693846839263</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1693846839263</updated>
-    </task>
-    <task id="LOCAL-00007" summary="#20 chap07:약한 암호 확인 기능에 스텁 사용">
-      <created>1693877839474</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1693877839474</updated>
-    </task>
-    <task id="LOCAL-00008" summary="#20 chap07:리포지토리를 가짜 구현으로 사용">
-      <created>1693879783559</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1693879783559</updated>
-    </task>
-    <task id="LOCAL-00009" summary="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용">
-      <created>1693883773476</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1693883773476</updated>
-    </task>
-    <task id="LOCAL-00010" summary="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용">
-      <option name="closed" value="true" />
-      <created>1693913611846</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1693913611846</updated>
-    </task>
-    <task id="LOCAL-00011" summary="#20 chap07:모의 객체로 스텁과 스파이 대체">
-      <option name="closed" value="true" />
-      <created>1693913768755</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1693913768755</updated>
-    </task>
-    <task id="LOCAL-00012" summary="#20 chap07:모의 객체를 과하게 사용하지 않기">
-      <option name="closed" value="true" />
-      <created>1693917208559</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1693917208559</updated>
-    </task>
-    <task id="LOCAL-00013" summary="#23 chap09:하드 코딩된 경로">
-      <option name="closed" value="true" />
-      <created>1694101777888</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1694101777888</updated>
-    </task>
-    <task id="LOCAL-00014" summary="#23 chap09:정적메서드 사용">
-      <option name="closed" value="true" />
-      <created>1694102508192</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1694102508192</updated>
-    </task>
-    <task id="LOCAL-00015" summary="#23 chap09:실행 시점에 따라 달라지는 결과">
-      <option name="closed" value="true" />
-      <created>1694103147217</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1694103147217</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,21 +184,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="#11 chap03: 다음테스트를 추가하기 전에 리팩토링" />
-    <MESSAGE value="#11 chap03: 예외 상황 테스트 진행 계속" />
-    <MESSAGE value="#11 chap03:코드정리:상수를 변수로" />
-    <MESSAGE value="#11 chap03:예외 상황 테스트 추가" />
-    <MESSAGE value="#11 chap03:코드정리" />
-    <MESSAGE value="#11 chap03:다음테스트: 10개월 요금을 납부하면 1년 제공" />
-    <MESSAGE value="#20 chap07:대역의 필요성" />
-    <MESSAGE value="#20 chap07:약한 암호 확인 기능에 스텁 사용" />
-    <MESSAGE value="#20 chap07:리포지토리를 가짜 구현으로 사용" />
-    <MESSAGE value="#20 chap07:이메일 발송 여부를 확인하기 위해 스파이를 사용" />
-    <MESSAGE value="#20 chap07:모의 객체로 스텁과 스파이 대체" />
-    <MESSAGE value="#20 chap07:모의 객체를 과하게 사용하지 않기" />
-    <MESSAGE value="#23 chap09:하드 코딩된 경로" />
-    <MESSAGE value="#23 chap09:정적메서드 사용" />
-    <MESSAGE value="#23 chap09:실행 시점에 따라 달라지는 결과" />
-    <option name="LAST_COMMIT_MESSAGE" value="#23 chap09:실행 시점에 따라 달라지는 결과" />
+    <MESSAGE value="#28 두 개 이상을 검증하지 않기" />
+    <MESSAGE value="#28 정확하게 일치하는 값으로 모의 객체 설정하지 않기" />
+    <option name="LAST_COMMIT_MESSAGE" value="#28 정확하게 일치하는 값으로 모의 객체 설정하지 않기" />
   </component>
 </project>
