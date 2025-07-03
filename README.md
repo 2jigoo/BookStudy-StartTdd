@@ -2,7 +2,8 @@
 '테스트 주도 개발 시작하기' 스터디
 
 <a href="https://github.com/devxb/gitanimals">
-  <img src="https://render.gitanimals.org/lines/{username}?pet-id=1" width="1000" height="120"/>
+  <img src="https://render.gitanimals.org/lines/2jigoo?pet-id=1" width="1000" height="120"/>
+  <img src="https://render.gitanimals.org/lines/jonghai?pet-id=2" width="1000" height="120"/>
 </a>
 
 - [Chapter 2. TDD 시작](https://github.com/2jigoo/BookStudy-StartTdd/blob/main/docs/02-TDD-시작.md)
